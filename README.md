@@ -117,7 +117,7 @@ D3D11 리소스를 `Create()` / `Destroy()` 로 감싼 래퍼 클래스들입니
 
 
 빌드 과정 없이 포트폴리오를 실행하려면 아래 링크된 파일을 다운받으시면 됩니다.
-[https://github.com/P2nkrose/MultiThreadedRendering/releases/download/1/MultiThreadSquidRoomRelease.zip](https://github.com/P2nkrose/MultiThreadedRendering/releases/download/1/MultiThreadSquidRoomRelease.zip)
+https://github.com/P2nkrose/MultiThreadedRendering/releases/download/1/MultiThreadSquidRoomRelease.zip
 
 - Release 된 바이너리는 Windows 64bit 전용입니다.
 - 압축 해제 후 `bin` 폴더의 `MultithreadedRendering_x64_release.exe` 를 실행하세요.
