@@ -1,6 +1,6 @@
 # MultiThread Deferred Context Rendering
 
-DirectX 11의 [DeferredContext](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-render-multi-thread-render)를 이용한 **MultiThreaded Rendering** 구현입니다.
+DirectX 11의 [DeferredContext](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-render-multi-thread-render)를 이용한 **MultiThreaded Rendering** 구현입니다.<br>
 하나의 씬(SquidRoom)을 **5가지 렌더링 경로**로 그려, <br> Immediate Context 와 DeferredContext 멀티스레딩의 차이를 실시간으로 비교할 수 있도록 구현했습니다.
 
 <img width="600" height="400" alt="squid3" src="https://github.com/user-attachments/assets/b45afa3d-87a4-4a60-8d63-4bf36737046f" />
@@ -10,10 +10,10 @@ DirectX 11의 [DeferredContext](https://learn.microsoft.com/en-us/windows/win32/
 
 ## Important Implementations
 
-- [MultiThreaded Rendering](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-render-multi-thread-intro) with [DeferredContext](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-render-multi-thread-render) — 여러 스레드에서 Command List를 기록하고 Immediate Context가 실행
-- 작업 분할 두 가지 방식 — **per-Scene**(렌더 패스 단위) / **per-Chunk**(메시 드로우콜 단위)
+- [MultiThreaded Rendering](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-render-multi-thread-intro) with [DeferredContext](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-render-multi-thread-render) 
+- **per-Scene**(렌더 패스 단위) / **per-Chunk**(메시 드로우콜 단위)
 - Shadow Map — 광원 시점 깊이 렌더링을 통한 그림자
-- Planar Mirror Reflection — Stencil 기법 기반 거울 반사(4개)
+- Planar Mirror Reflection — Stencil 기법 기반 거울 반사
 
 ---
 
@@ -50,7 +50,7 @@ DirectX 11의 [DeferredContext](https://learn.microsoft.com/en-us/windows/win32/
 
 ### Per-Scene / Per-Chunk Worker Threads
 DeferredContext에 Command List를 기록하는 워커 스레드 풀입니다.<br>
-per-Scene은 씬(패스)마다 스레드 하나(그림자 + 거울 + 메인),
+per-Scene은 씬(패스)마다 스레드 하나(그림자 + 거울 + 메인),<br>
 per-Chunk는 물리 코어 수만큼의 스레드가 메시 청크를 나눠 기록합니다.
 
 **Main Code**
