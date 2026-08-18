@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{2c3d4c8c-5d1a-459a-a05a-a4e4b608a44e}</UniqueIdentifier>
+      <Extensions>fx;fxh;hlsl</Extensions>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{a1000001-0000-4000-8000-000000000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrappers">
+      <UniqueIdentifier>{a1000002-0000-4000-8000-000000000002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{a1000003-0000-4000-8000-000000000003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{a1000004-0000-4000-8000-000000000004}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DXUT\Optional\directx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Media\shader\MultithreadedRendering_PS.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Media\shader\MultithreadedRendering_VS.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SquidRenderer.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Shader.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\VertexShader.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PixelShader.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConstantBuffer.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\VertexBuffer.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SamplerState.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RasterizerState.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DepthStencilState.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Light.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ShadowMap.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Mirror.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MultiDeviceContextDXUTMesh.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\SquidRenderer.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RenderConstants.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Shader.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\VertexShader.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PixelShader.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ConstantBuffer.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\VertexBuffer.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SamplerState.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RasterizerState.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DepthStencilState.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Light.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ShadowMap.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Mirror.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SceneParams.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ConstantBuffers.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\WorkQueue.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MultiDeviceContextDXUTMesh.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ResourceCompile Include="MultithreadedRendering.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
